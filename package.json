@@ -1,0 +1,14 @@
+{
+  "name": "wbdv-sp2102-shuying-zheng-server-node",
+  "version": "1.0.0",
+  "description": "node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuying Zheng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
