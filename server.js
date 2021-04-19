@@ -24,8 +24,11 @@ demos(app)
 
 // const quizzesController = require('./controllers/quizzes-controller')
 // quizzesController(app)
-
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 require('./controllers/quizzes-controller')(app)
 require('./controllers/questions-controller')(app)
+require('./controllers/quiz-attempts-controller')(app)
 
 app.listen(4000)
