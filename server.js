@@ -10,17 +10,6 @@ const app = express()
 
 require('./db')
 
-// const session = require('express-session')
-// app.use(session({
-//     secret: 'keyboard cat',
-//     resave: false,
-//     saveUninitialized: true,
-//     cookie: {
-//         maxAge: 1000 * 60 * 3000
-//     }
-//     // cookie: {secure: true}
-// }))
-
 // Configures CORS
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
