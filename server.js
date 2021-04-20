@@ -1,7 +1,14 @@
 // TODO: visit https://expressjs.com/
 const express = require('express')
 const app = express()
+
+// const mongoose = require('mongoose');
+// mongoose.connect(
+//     'mongodb://localhost:27017/whiteboard',
+//     {useNewUrlParser: true, useUnifiedTopology: true}
+//     );
 require('./db')
+
 
 // Configures CORS
 app.use(function (req, res, next) {
@@ -12,6 +19,7 @@ app.use(function (req, res, next) {
         'GET, POST, PUT, PATCH, DELETE, OPTIONS');
     next();
 });
+
 
 const demos = require('./controllers/demos-controller')
 demos(app)
